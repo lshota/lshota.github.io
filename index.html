@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>李翔太 | Portfolio</title>
+  <meta name="description" content="フルスタックエンジニア 李翔太 のポートフォリオサイト。これまでに制作した作品と経歴を掲載しています。">
+  <meta property="og:title" content="李翔太 | Portfolio">
+  <meta property="og:description" content="フルスタックエンジニア 李翔太 のポートフォリオサイト">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    (function() {
+      try {
+        const stored = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#hero" class="header__logo">李翔太</a>
+      <div class="header__right">
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li><a href="#about" class="nav__link">About</a></li>
+            <li><a href="#skills" class="nav__link">Skills</a></li>
+            <li><a href="#works" class="nav__link">Works</a></li>
+            <li><a href="#experience" class="nav__link">Experience</a></li>
+            <li><a href="#contact" class="nav__link">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="テーマを切り替え">
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </button>
+        <button class="header__toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="hero" class="hero">
+      <div class="container hero__inner">
+        <p class="hero__greeting">Hello, I'm</p>
+        <h1 class="hero__name">李翔太</h1>
+        <p class="hero__title">フルスタックエンジニア</p>
+        <p class="hero__lead">
+          ユーザー体験を大切にした Web アプリケーションを作っています。<br>
+          技術と課題解決の両面から、価値あるプロダクトづくりを目指します。
+        </p>
+        <div class="hero__actions">
+          <a href="#works" class="btn btn--primary">作品を見る</a>
+          <a href="#contact" class="btn btn--ghost">お問い合わせ</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <p class="section__label">01 — About</p>
+        <h2 class="section__title">自己紹介</h2>
+        <div class="about">
+          <div class="about__image">
+            <img src="assets/images/profile.jpg" alt="李翔太" loading="lazy">
+          </div>
+          <div class="about__text">
+            <p>はじめまして、李翔太と申します。台湾出身のフルスタックエンジニアで、現在も台湾を拠点に活動しています。</p>
+            <p>
+              日本向けの開発案件には10年以上携わってきました。日本のビジネス文化や品質基準、開発現場でのコミュニケーションへの理解には自信があり、日本企業様との協業実績が豊富です。
+            </p>
+            <p>
+              これまで Web アプリケーション開発を中心に、フロントエンドからバックエンド、インフラ構築まで一通り経験してきました。
+              要件定義から実装・運用まで一貫して関われるのが強みです。
+            </p>
+            <p>
+              「使いやすさ」と「保守しやすさ」の両立を大切にしながら、チームで協働してプロダクトを育てていくことに価値を感じています。
+              技術選定では流行に流されず、課題解決に最適な手段を見極めることを意識しています。
+            </p>
+            <p>
+              フロントエンド開発チームのリードを担当した経験もあり、5名規模のチームマネジメント・タスク進行管理・コードレビューを通じて、品質基準策定とレビュー体制強化に取り組みました。
+              リリース後の不具合件数を前年対比30%削減、TypeScript を軸とした設計改善でレビュー指摘件数を約30%削減、新規画面開発工数を20〜25%短縮した実績があります。
+            </p>
+            <p>
+              新しい技術を学ぶことが好きで、最近は AI 関連技術 — 特に LLM（大規模言語モデル）を活用したアプリケーション開発、RAG（検索拡張生成）や AI エージェントの実装に深く取り組んでいます。
+              日々の開発にも積極的に AI を取り入れ、開発効率の向上や新しいユーザー体験づくりに挑戦しています。
+            </p>
+            <dl class="about__meta">
+              <div class="about__meta-item">
+                <dt>所在地</dt><dd>台湾</dd>
+              </div>
+              <div class="about__meta-item">
+                <dt>ロール</dt><dd>フルスタックエンジニア</dd>
+              </div>
+              <div class="about__meta-item">
+                <dt>稼働形態</dt><dd>正社員 / 業務委託</dd>
+              </div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" class="section section--alt section--with-bg-image">
+      <div class="container">
+        <p class="section__label">02 — Skills</p>
+        <h2 class="section__title">スキル</h2>
+        <div class="skills">
+          <div class="skill-group">
+            <h3 class="skill-group__title">Frontend</h3>
+            <ul class="skill-list">
+              <li>React / Next.js（7年）</li>
+              <li>Vue.js / Nuxt.js（4年）</li>
+              <li>TypeScript / JavaScript</li>
+              <li>Styled Components, Storybook</li>
+              <li>Twig, jQuery</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Backend</h3>
+            <ul class="skill-list">
+              <li>Laravel / PHP（8年）</li>
+              <li>Node.js / Nest.js（5年）</li>
+              <li>Django / Python（3年）</li>
+              <li>Ruby on Rails, Go（3年）</li>
+              <li>REST API / GraphQL</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Mobile App</h3>
+            <ul class="skill-list">
+              <li>Swift（5年）</li>
+              <li>Kotlin（5年）</li>
+              <li>React Native（4年）</li>
+              <li>Flutter（3年）</li>
+              <li>Objective-C / Java</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Cloud &amp; Infra</h3>
+            <ul class="skill-list">
+              <li>AWS（EC2 / Lambda / S3 / RDS / Cognito）</li>
+              <li>Firebase, Docker</li>
+              <li>MySQL / PostgreSQL / DynamoDB</li>
+              <li>GitHub / GitLab</li>
+              <li>Stripe / PayJP / Square</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="certifications">
+          <h3 class="certifications__title">資格・認定</h3>
+          <ul class="certifications__list">
+            <li><span class="certifications__year">2024</span><span>Laravel 認定試験 上位10%</span></li>
+            <li><span class="certifications__year">2020</span><span>PHP 技術者認定試験 合格</span></li>
+            <li><span class="certifications__year">2020</span><span>JavaScript 技術者認定試験 合格</span></li>
+            <li><span class="certifications__year">2019</span><span>情報処理技術者</span></li>
+            <li><span class="certifications__year">2018</span><span>HTML5 プロフェッショナル認定資格</span></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="section section--with-works-bg">
+      <div class="container">
+        <p class="section__label">03 — Works</p>
+        <h2 class="section__title">制作実績</h2>
+        <div class="works" id="worksGrid">
+          <article class="work-card">
+            <a href="works/cbre-properties.html" class="work-card__link">
+              <div class="work-card__thumb">
+                <span class="work-card__thumb-text">CBRE</span>
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">CBRE Japan 物件検索</h3>
+                <p class="work-card__desc">
+                  世界最大の事業用不動産サービス会社 CBRE が運営する、企業向け物件検索プラットフォーム。
+                </p>
+                <ul class="work-card__tags">
+                  <li>不動産</li>
+                  <li>エンタープライズ</li>
+                  <li>Web</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card">
+            <a href="works/little-dvc-gallerycity.html" class="work-card__link">
+              <div class="work-card__thumb work-card__thumb--icon">
+                <img src="assets/images/works/little-dvc-logo.png" alt="Little Da Vinci" loading="lazy">
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">GalleryCity</h3>
+                <p class="work-card__desc">
+                  「リトル・ダヴィンチ」が展開する GalleryCity ブランドの公式 Web サイト。
+                </p>
+                <ul class="work-card__tags">
+                  <li>Web開発</li>
+                  <li>サービスサイト</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card">
+            <a href="works/baseballgate-okinawa-camp.html" class="work-card__link">
+              <div class="work-card__thumb">
+                <img src="assets/images/works/baseballgate-okinawa.jpg" alt="プロ野球沖縄キャンプ2026" loading="lazy">
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">プロ野球沖縄キャンプ2026</h3>
+                <p class="work-card__desc">
+                  沖縄で開催されるプロ野球春季キャンプの公式情報・スタンプラリーキャンペーンサイト。
+                </p>
+                <ul class="work-card__tags">
+                  <li>WordPress</li>
+                  <li>キャンペーン</li>
+                  <li>スポーツ</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card">
+            <a href="works/minnano-keirin.html" class="work-card__link">
+              <div class="work-card__thumb">
+                <img src="assets/images/works/minnano-keirin.jpg" alt="みんなの競輪" loading="lazy">
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">みんなの競輪</h3>
+                <p class="work-card__desc">
+                  競輪の予想・レース映像を見ながら投票できる、競輪のオンライン投票サービス。
+                </p>
+                <ul class="work-card__tags">
+                  <li>Next.js</li>
+                  <li>TypeScript</li>
+                  <li>オンライン投票</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card">
+            <a href="works/spurcle-nexus.html" class="work-card__link">
+              <div class="work-card__thumb work-card__thumb--icon">
+                <img src="assets/images/works/spurcle-logo.svg" alt="Spurcle" loading="lazy">
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Spurcle Community（Nexus）</h3>
+                <p class="work-card__desc">
+                  Spurcle が運営する Nexus コミュニティのWebプラットフォーム。
+                </p>
+                <ul class="work-card__tags">
+                  <li>Next.js</li>
+                  <li>コミュニティ</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card">
+            <a href="works/guinot-paris.html" class="work-card__link">
+              <div class="work-card__thumb work-card__thumb--icon">
+                <img src="assets/images/works/guinot-logo.svg" alt="Guinot" loading="lazy">
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Guinot Official Beauty Salon</h3>
+                <p class="work-card__desc">
+                  フランス発の高級美容ブランド Guinot の公式オンラインサロン。
+                </p>
+                <ul class="work-card__tags">
+                  <li>EC</li>
+                  <li>美容</li>
+                  <li>認証</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+        </div>
+
+        <div class="works__more">
+          <button class="btn btn--primary works__more-btn" id="worksMoreBtn" aria-expanded="false" aria-controls="worksGrid">
+            <span class="works__more-text">もっと見る</span>
+            <svg class="works__more-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <polyline points="6 9 12 15 18 9"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section section--alt">
+      <div class="container">
+        <p class="section__label">04 — Experience</p>
+        <h2 class="section__title">経歴</h2>
+        <ol class="timeline">
+          <li class="timeline__item">
+            <div class="timeline__date">2020.10 — 現在</div>
+            <div class="timeline__body">
+              <h3 class="timeline__title">フリーランス フルスタックエンジニア</h3>
+              <p>
+                正社員時代に培った経験を活かし、フリーランスとして独立。スマホアプリと Webシステム開発（フロントエンド・バックエンド・インフラ）を一貫担当。
+                Spurcle・リトル・ダヴィンチ・みんなの競輪・Guinot などの Web プラットフォーム開発に参画し、React/Next.js + Laravel/Node.js + AWS を主軸に多様な業界の案件を手がけています。
+              </p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__date">2017.5 — 2020.9</div>
+            <div class="timeline__body">
+              <h3 class="timeline__title">UrbanMobi社（日本支社） / SE</h3>
+              <p>
+                日本のお客様と直接やり取りしながら、モバイルアプリ開発を担当。
+                「まみぃメモ」（妊婦・赤ちゃん健康管理）、「Kansai Special Coupon」（観光案内）、「すくすく成長曲線」（子どもの成長記録）など、iOS / Android アプリのリリース・運用を経験。Swift / Objective-C / Kotlin / Firebase を中心に幅広く対応しました。
+              </p>
+            </div>
+          </li>
+          <li class="timeline__item">
+            <div class="timeline__date">2015.4 — 2017.5</div>
+            <div class="timeline__body">
+              <h3 class="timeline__title">YASIN社（台湾） / デザイナー → SE</h3>
+              <p>
+                日本向け Web サイト・広告デザインの制作からキャリアをスタート。その後 Web システム + アプリ開発と日本語通訳を担当し、日本の仕事の進め方やビジネス文化を学びました。Ruby on Rails / Django / Laravel / Java など、幅広い技術スタックを経験。
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container container--narrow">
+        <p class="section__label">05 — Contact</p>
+        <h2 class="section__title">お問い合わせ</h2>
+        <p class="contact__lead">
+          お仕事のご相談やご質問など、お気軽にご連絡ください。
+        </p>
+        <ul class="contact__list">
+          <li class="contact__item">
+            <span class="contact__icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M22 4H2c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h20c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H2V8.99l10 5 10-5V18zM12 12L2 7h20l-10 5z"/>
+              </svg>
+            </span>
+            <span class="contact__label">Email</span>
+            <a href="mailto:shota.li@outlook.jp" class="contact__value">shota.li@outlook.jp</a>
+          </li>
+          <li class="contact__item">
+            <span class="contact__icon" aria-hidden="true">
+              <img src="assets/images/icons/chatwork.png" alt="Chatwork" loading="lazy">
+            </span>
+            <span class="contact__label">Chatwork</span>
+            <span class="contact__value">ID は別途ご案内します</span>
+          </li>
+          <li class="contact__item">
+            <span class="contact__icon" aria-hidden="true">
+              <img src="assets/images/icons/slack.svg" alt="Slack" loading="lazy">
+            </span>
+            <span class="contact__label">Slack</span>
+            <span class="contact__value">ワークスペースは別途共有します</span>
+          </li>
+        </ul>
+
+        <div class="contact__cta">
+          <a href="mailto:shota.li@outlook.jp" class="btn btn--primary">メールで問い合わせる</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; <span id="year"></span> 李翔太. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>

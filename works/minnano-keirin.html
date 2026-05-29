@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>みんなの競輪 | 李翔太 Portfolio</title>
+  <meta name="description" content="競輪のオンライン投票サービス「みんなの競輪」のフロントエンドリニューアル実績。React + Styled Components + Storybook で構築。">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="stylesheet" href="../assets/css/works.css">
+
+  <script>
+    (function() {
+      try {
+        const stored = localStorage.getItem('theme');
+        const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        const theme = stored || (prefersDark ? 'dark' : 'light');
+        document.documentElement.setAttribute('data-theme', theme);
+      } catch (e) {
+        document.documentElement.setAttribute('data-theme', 'light');
+      }
+    })();
+  </script>
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="../index.html" class="header__logo">李翔太</a>
+      <div class="header__right">
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li><a href="../index.html#about" class="nav__link">About</a></li>
+            <li><a href="../index.html#skills" class="nav__link">Skills</a></li>
+            <li><a href="../index.html#works" class="nav__link">Works</a></li>
+            <li><a href="../index.html#experience" class="nav__link">Experience</a></li>
+            <li><a href="../index.html#contact" class="nav__link">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="theme-toggle" id="themeToggle" aria-label="テーマを切り替え">
+          <svg class="theme-toggle__icon theme-toggle__icon--moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+          </svg>
+          <svg class="theme-toggle__icon theme-toggle__icon--sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"/>
+            <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M4.93 19.07l1.41-1.41M17.66 6.34l1.41-1.41"/>
+          </svg>
+        </button>
+        <button class="header__toggle" id="navToggle" aria-label="メニューを開く" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="work-detail">
+    <div class="container">
+      <a href="../index.html#works" class="work-detail__back">作品一覧へ戻る</a>
+
+      <div class="work-detail__header">
+        <h1 class="work-detail__title">みんなの競輪</h1>
+        <p class="work-detail__lead">
+          競輪の予想・レース映像を見ながら投票できるオンライン投票サービスの、フロントエンドリニューアル案件。
+        </p>
+        <ul class="work-detail__tags">
+          <li>React</li>
+          <li>Styled Components</li>
+          <li>Storybook</li>
+          <li>UI/UX 改善</li>
+        </ul>
+      </div>
+
+      <div class="work-detail__hero">
+        <img src="../assets/images/works/minnano-keirin.jpg" alt="みんなの競輪">
+      </div>
+
+      <div class="work-detail__layout">
+        <div class="work-detail__main">
+          <h2>概要</h2>
+          <p>
+            お得なキャンペーンや特典を提供し、競輪初心者から経験者まで幅広いユーザーが、レース映像や予想情報を確認しながら簡単に投票できる競輪投票サービス。
+            既存サービスの UI/UX 改善を目的とし、ReactJS（Styled Components）を用いたフロントエンド刷新を担当しました。
+          </p>
+
+          <h2>役割・担当範囲</h2>
+          <p>SE / 5名チームでの参画。フロントエンドリニューアル全般を担当しました。</p>
+          <ul>
+            <li>ReactJS ＋ Styled Components を用いたフロントエンドリニューアル実装</li>
+            <li>コンポーネント設計：デザインとロジックをコンポーネント単位で整理し、UI の一貫性と再利用性を向上</li>
+            <li>投票画面・レース情報表示画面の UI/UX 改善（投票までの操作ステップを簡略化）</li>
+            <li>Storybook を導入したコンポーネント単位の UI テスト・表示確認体制の構築</li>
+            <li>既存 API との連携を考慮したデータ取得タイミング・表示制御の設計</li>
+          </ul>
+
+          <h2>工夫した点</h2>
+          <ul>
+            <li><strong>初心者にも直感的な UI</strong>：競輪初心者でも迷わず操作できる、シンプルな投票導線を設計</li>
+            <li><strong>スタイル管理の刷新</strong>：Styled Components で共通コンポーネント化・テーマ管理を行い、保守性を大幅に向上</li>
+            <li><strong>UI 品質の安定化</strong>：Storybook 導入で、デザイン崩れや仕様差異を早期に検知できる体制を整備</li>
+          </ul>
+
+          <h2>結果</h2>
+          <ul>
+            <li>投票画面の視認性・操作性が向上し、初心者でも利用しやすい UI を実現</li>
+            <li>コンポーネント設計とスタイル管理の改善により、今後の機能追加・UI 改修がしやすい構成を構築</li>
+            <li>フロントエンド刷新によりサービス全体のユーザー体験向上に貢献</li>
+          </ul>
+        </div>
+
+        <aside class="work-detail__side">
+          <dl>
+            <div>
+              <dt>サイト</dt>
+              <dd>みんなの競輪</dd>
+            </div>
+            <div>
+              <dt>URL</dt>
+              <dd><a href="https://bet.minnano-keirin.com/" target="_blank" rel="noopener">bet.minnano-keirin.com</a></dd>
+            </div>
+            <div>
+              <dt>制作期間</dt>
+              <dd>2024年11月 〜 2025年3月（約5ヶ月）</dd>
+            </div>
+            <div>
+              <dt>役割</dt>
+              <dd>SE（5名チーム・フロントエンド）</dd>
+            </div>
+            <div>
+              <dt>使用技術</dt>
+              <dd>ReactJS / Styled Components / Storybook</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <p class="footer__copy">&copy; <span id="year"></span> 李翔太. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
