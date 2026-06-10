@@ -85,7 +85,7 @@
           <div class="about__text">
             <p>はじめまして、李翔太と申します。台湾出身のフルスタックエンジニアで、現在も台湾を拠点に活動しています。</p>
             <p>
-              日本向けの開発案件には10年以上携わってきました。日本のビジネス文化や品質基準、開発現場でのコミュニケーションへの理解には自信があり、日本企業様との協業実績が豊富です。
+              日本企業との取引実績は9年以上。日本のビジネス文化や品質基準、開発現場でのコミュニケーションへの理解には自信があり、日本語での MTG・要件定義・ドキュメント作成にも対応しています（時差はわずか1時間、日本時間 9:00〜20:00 で稼働可能です）。
             </p>
             <p>
               これまで Web アプリケーション開発を中心に、フロントエンドからバックエンド、インフラ構築まで一通り経験してきました。
@@ -127,41 +127,39 @@
           <div class="skill-group">
             <h3 class="skill-group__title">Frontend</h3>
             <ul class="skill-list">
-              <li>React / Next.js（7年）</li>
-              <li>Vue.js / Nuxt.js（4年）</li>
-              <li>TypeScript / JavaScript</li>
-              <li>Styled Components, Storybook</li>
-              <li>Twig, jQuery</li>
+              <li>TypeScript / React 18・19（5年）</li>
+              <li>Next.js 14・15（App Router）</li>
+              <li>Vue 3 / Nuxt / Inertia.js / Pinia（4年）</li>
+              <li>Tailwind CSS / styled-components</li>
+              <li>Storybook / Jest / openapi-typescript</li>
             </ul>
           </div>
           <div class="skill-group">
             <h3 class="skill-group__title">Backend</h3>
             <ul class="skill-list">
-              <li>Laravel / PHP（8年）</li>
-              <li>Node.js / Nest.js（5年）</li>
-              <li>Django / Python（3年）</li>
-              <li>Ruby on Rails, Go（3年）</li>
-              <li>REST API / GraphQL</li>
-            </ul>
-          </div>
-          <div class="skill-group">
-            <h3 class="skill-group__title">Mobile App</h3>
-            <ul class="skill-list">
-              <li>Swift（5年）</li>
-              <li>Kotlin（5年）</li>
-              <li>React Native（4年）</li>
-              <li>Flutter（3年）</li>
-              <li>Objective-C / Java</li>
+              <li>PHP / Laravel 5〜12（7年）</li>
+              <li>Node.js / NestJS（3年）</li>
+              <li>Python / Django / AWS Lambda（3年）</li>
+              <li>REST API / OpenAPI 設計</li>
+              <li>Repository / UseCase・DTO パターン</li>
             </ul>
           </div>
           <div class="skill-group">
             <h3 class="skill-group__title">Cloud &amp; Infra</h3>
             <ul class="skill-list">
-              <li>AWS（EC2 / Lambda / S3 / RDS / Cognito）</li>
-              <li>Firebase, Docker</li>
-              <li>MySQL / PostgreSQL / DynamoDB</li>
-              <li>GitHub / GitLab</li>
-              <li>Stripe / PayJP / Square</li>
+              <li>AWS（EC2 / RDS・Aurora / S3 / Lambda / Cognito / SES / ElastiCache / CloudFront）（5年）</li>
+              <li>Docker / Firebase / GCP</li>
+              <li>MySQL / PostgreSQL / DynamoDB / Redis</li>
+              <li>GitHub Actions（CI/CD）/ Nginx</li>
+            </ul>
+          </div>
+          <div class="skill-group">
+            <h3 class="skill-group__title">Auth / Payment / AI</h3>
+            <ul class="skill-list">
+              <li>AWS Cognito マルチプール / JWT / OAuth / 2段階認証（5案件以上）</li>
+              <li>Stripe Connect / PAY.JP / Square / GMO / PayPay</li>
+              <li>OpenAI API（GPT-4o）組み込み 3案件</li>
+              <li>Swift / Kotlin（既存アプリ保守対応可）</li>
             </ul>
           </div>
         </div>
@@ -190,14 +188,73 @@
                 <span class="work-card__thumb-text">CBRE</span>
               </div>
               <div class="work-card__body">
-                <h3 class="work-card__title">CBRE Japan 物件検索</h3>
+                <h3 class="work-card__title">CBRE Japan 物件検索・会員管理システム</h3>
                 <p class="work-card__desc">
-                  世界最大の事業用不動産サービス会社 CBRE が運営する、企業向け物件検索プラットフォーム。
+                  世界最大の事業用不動産サービス会社の物件検索システム。約26万件の物件データを扱うフロントエンドリニューアル（8名体制）。
                 </p>
                 <ul class="work-card__tags">
-                  <li>不動産</li>
-                  <li>エンタープライズ</li>
-                  <li>Web</li>
+                  <li>Next.js 14</li>
+                  <li>TypeScript</li>
+                  <li>Turborepo</li>
+                  <li>AWS</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card">
+            <a href="works/fitness-map-analysis.html" class="work-card__link">
+              <div class="work-card__thumb">
+                <span class="work-card__thumb-text">AI 商圏分析マップ</span>
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">立地分析・商圏調査マップシステム</h3>
+                <p class="work-card__desc">
+                  全国のフィットネス施設×人口統計で商圏分析を支援する AI 検索機能付きマップシステム。技術選定から一貫担当。
+                </p>
+                <ul class="work-card__tags">
+                  <li>Vue 3</li>
+                  <li>Laravel 12</li>
+                  <li>OpenAI API</li>
+                  <li>Google Maps</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card">
+            <a href="works/suc-gaming.html" class="work-card__link">
+              <div class="work-card__thumb work-card__thumb--icon">
+                <img src="assets/images/works/suc-gaming-logo.svg" alt="SUC GAMING" loading="lazy">
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">SUC GAMING</h3>
+                <p class="work-card__desc">
+                  Stripe Connect マーケットプレイス決済を備えた、ゲームスキルマッチングプラットフォーム。
+                </p>
+                <ul class="work-card__tags">
+                  <li>Laravel 8</li>
+                  <li>Vue 2</li>
+                  <li>Stripe Connect</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card">
+            <a href="works/guinot-paris.html" class="work-card__link">
+              <div class="work-card__thumb work-card__thumb--icon">
+                <img src="assets/images/works/guinot-logo.svg" alt="Guinot" loading="lazy">
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">美容サロン FC 向け 会員 EC・予約管理システム</h3>
+                <p class="work-card__desc">
+                  会員向け EC・施術予約と、本部・店舗・メーカー向け管理システムをゼロから開発。15分単位の予約空き枠算出。
+                </p>
+                <ul class="work-card__tags">
+                  <li>Laravel 12</li>
+                  <li>PAY.JP</li>
+                  <li>AWS</li>
                 </ul>
               </div>
             </a>
@@ -209,18 +266,99 @@
                 <img src="assets/images/works/little-dvc-logo.png" alt="Little Da Vinci" loading="lazy">
               </div>
               <div class="work-card__body">
-                <h3 class="work-card__title">GalleryCity</h3>
+                <h3 class="work-card__title">GalleryCity（リトル・ダビンチ）</h3>
                 <p class="work-card__desc">
-                  「リトル・ダヴィンチ」が展開する GalleryCity ブランドの公式 Web サイト。
+                  子どもの作品を家族で共有し、GPT-4o による AI 評価・コンクール応募ができるギャラリープラットフォーム。
                 </p>
                 <ul class="work-card__tags">
-                  <li>Web開発</li>
-                  <li>サービスサイト</li>
+                  <li>Vue 3</li>
+                  <li>Laravel 9</li>
+                  <li>OpenAI GPT-4o</li>
+                  <li>Square</li>
                 </ul>
               </div>
             </a>
           </article>
 
+          <article class="work-card">
+            <a href="works/mept-gait-analysis.html" class="work-card__link">
+              <div class="work-card__thumb">
+                <span class="work-card__thumb-text">MePT</span>
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">歩行解析 AI 管理システム「MePT」</h3>
+                <p class="work-card__desc">
+                  リハビリ患者の歩行計測データを管理する医療 DX システム。Python Lambda 30関数超の API と AI 推論パイプラインを構築。
+                </p>
+                <ul class="work-card__tags">
+                  <li>Next.js 15</li>
+                  <li>Python Lambda</li>
+                  <li>DynamoDB</li>
+                  <li>医療 DX</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card">
+            <a href="works/spurcle-nexus.html" class="work-card__link">
+              <div class="work-card__thumb work-card__thumb--icon">
+                <img src="assets/images/works/spurcle-logo.svg" alt="Spurcle" loading="lazy">
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">Spurcle（企業検索・イベント参加プラットフォーム）</h3>
+                <p class="work-card__desc">
+                  4種類のユーザーが企業・ニュース・イベント情報を閲覧・検索・応募できるプラットフォーム。設計〜インフラまで1名で担当。
+                </p>
+                <ul class="work-card__tags">
+                  <li>Next.js 14</li>
+                  <li>Laravel 11</li>
+                  <li>MicroCMS</li>
+                  <li>Cognito</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card">
+            <a href="works/minnano-keirin.html" class="work-card__link">
+              <div class="work-card__thumb">
+                <img src="assets/images/works/minnano-keirin.jpg" alt="みんなの競輪" loading="lazy">
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">みんなの競輪（Web 投票システム）</h3>
+                <p class="work-card__desc">
+                  公営競技の車券投票・資金チャージ・会員管理を行う統合サイト。App Router 55ルート超のフロントエンド実装。
+                </p>
+                <ul class="work-card__tags">
+                  <li>Next.js 15</li>
+                  <li>React Query</li>
+                  <li>Storybook</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <article class="work-card">
+            <a href="works/okinawa-matchmaking.html" class="work-card__link">
+              <div class="work-card__thumb">
+                <span class="work-card__thumb-text">婚活マッチング</span>
+              </div>
+              <div class="work-card__body">
+                <h3 class="work-card__title">婚活マッチング Web システム</h3>
+                <p class="work-card__desc">
+                  地域婚活会員向けマッチングサービス。検索・申請・メッセージから管理者の会員審査・通報対応まで一貫実装。
+                </p>
+                <ul class="work-card__tags">
+                  <li>Laravel 10</li>
+                  <li>Inertia.js</li>
+                  <li>Vue 3</li>
+                </ul>
+              </div>
+            </a>
+          </article>
+
+          <!-- 非表示中: プロ野球沖縄キャンプ2026（再表示する場合はこのコメントを解除）
           <article class="work-card">
             <a href="works/baseballgate-okinawa-camp.html" class="work-card__link">
               <div class="work-card__thumb">
@@ -239,62 +377,28 @@
               </div>
             </a>
           </article>
+          -->
 
+          <!-- 非表示中: GYM Machine Price 比較サイト（再表示する場合はこのコメントを解除）
           <article class="work-card">
-            <a href="works/minnano-keirin.html" class="work-card__link">
-              <div class="work-card__thumb">
-                <img src="assets/images/works/minnano-keirin.jpg" alt="みんなの競輪" loading="lazy">
+            <a href="works/gymcloud-comparison.html" class="work-card__link">
+              <div class="work-card__thumb work-card__thumb&#45;&#45;icon">
+                <img src="assets/images/works/gymcloud-logo.png" alt="GYM CLOUD" loading="lazy">
               </div>
               <div class="work-card__body">
-                <h3 class="work-card__title">みんなの競輪</h3>
+                <h3 class="work-card__title">GYM Machine Price 比較サイト</h3>
                 <p class="work-card__desc">
-                  競輪の予想・レース映像を見ながら投票できる、競輪のオンライン投票サービス。
+                  トレーニングマシンの最安値比較・新品/中古品の一括見積りができるフィットネス機器の比較プラットフォーム。
                 </p>
                 <ul class="work-card__tags">
-                  <li>Next.js</li>
-                  <li>TypeScript</li>
-                  <li>オンライン投票</li>
+                  <li>比較サイト</li>
+                  <li>一括見積り</li>
+                  <li>B2B</li>
                 </ul>
               </div>
             </a>
           </article>
-
-          <article class="work-card">
-            <a href="works/spurcle-nexus.html" class="work-card__link">
-              <div class="work-card__thumb work-card__thumb--icon">
-                <img src="assets/images/works/spurcle-logo.svg" alt="Spurcle" loading="lazy">
-              </div>
-              <div class="work-card__body">
-                <h3 class="work-card__title">Spurcle Community（Nexus）</h3>
-                <p class="work-card__desc">
-                  Spurcle が運営する Nexus コミュニティのWebプラットフォーム。
-                </p>
-                <ul class="work-card__tags">
-                  <li>Next.js</li>
-                  <li>コミュニティ</li>
-                </ul>
-              </div>
-            </a>
-          </article>
-
-          <article class="work-card">
-            <a href="works/guinot-paris.html" class="work-card__link">
-              <div class="work-card__thumb work-card__thumb--icon">
-                <img src="assets/images/works/guinot-logo.svg" alt="Guinot" loading="lazy">
-              </div>
-              <div class="work-card__body">
-                <h3 class="work-card__title">Guinot Official Beauty Salon</h3>
-                <p class="work-card__desc">
-                  フランス発の高級美容ブランド Guinot の公式オンラインサロン。
-                </p>
-                <ul class="work-card__tags">
-                  <li>EC</li>
-                  <li>美容</li>
-                  <li>認証</li>
-                </ul>
-              </div>
-            </a>
-          </article>
+          -->
         </div>
 
         <div class="works__more">
@@ -318,27 +422,28 @@
             <div class="timeline__body">
               <h3 class="timeline__title">フリーランス フルスタックエンジニア</h3>
               <p>
-                正社員時代に培った経験を活かし、フリーランスとして独立。スマホアプリと Webシステム開発（フロントエンド・バックエンド・インフラ）を一貫担当。
-                Spurcle・リトル・ダヴィンチ・みんなの競輪・Guinot などの Web プラットフォーム開発に参画し、React/Next.js + Laravel/Node.js + AWS を主軸に多様な業界の案件を手がけています。
+                日本企業向けの Web システム開発に専門特化。バックエンドは Laravel（PHP）を中心に、フロントエンドは React（Next.js）・Vue（Nuxt）、インフラは AWS まで一貫対応。
+                直近では外資系大手不動産の物件検索システム（Next.js 14・8名体制）、OpenAI API を組み込んだ商圏分析システム、医療 DX（歩行解析 AI 管理）、Stripe Connect によるマーケットプレイス型決済基盤など、要件定義・設計段階からの参画を中心に本番リリース・運用まで完遂。
               </p>
             </div>
           </li>
           <li class="timeline__item">
-            <div class="timeline__date">2017.5 — 2020.9</div>
+            <div class="timeline__date">2017.4 — 2020.3</div>
             <div class="timeline__body">
               <h3 class="timeline__title">UrbanMobi社（日本支社） / SE</h3>
               <p>
-                日本のお客様と直接やり取りしながら、モバイルアプリ開発を担当。
-                「まみぃメモ」（妊婦・赤ちゃん健康管理）、「Kansai Special Coupon」（観光案内）、「すくすく成長曲線」（子どもの成長記録）など、iOS / Android アプリのリリース・運用を経験。Swift / Objective-C / Kotlin / Firebase を中心に幅広く対応しました。
+                日本のクライアントとの折衝・進行管理を直接担当しながら、モバイルアプリ開発に従事。
+                「まみぃメモ」（妊婦・育児向け健康管理）、「Kansai Special Coupon」（観光案内）、「すくすく成長曲線」（子どもの成長記録・PL として要件定義からストア申請・保守まで担当）など、iOS / Android アプリのリリース・運用を経験。Swift / Objective-C / Kotlin / Java / Firebase を中心に対応しました。
               </p>
             </div>
           </li>
           <li class="timeline__item">
-            <div class="timeline__date">2015.4 — 2017.5</div>
+            <div class="timeline__date">2015.4 — 2016.12</div>
             <div class="timeline__body">
               <h3 class="timeline__title">YASIN社（台湾） / デザイナー → SE</h3>
               <p>
-                日本向け Web サイト・広告デザインの制作からキャリアをスタート。その後 Web システム + アプリ開発と日本語通訳を担当し、日本の仕事の進め方やビジネス文化を学びました。Ruby on Rails / Django / Laravel / Java など、幅広い技術スタックを経験。
+                日本向け Web サイト・広告デザインの制作（Photoshop / Illustrator）からキャリアをスタートし、日本のデザイン慣習・商習慣を習得。
+                その後 Web システム＋アプリ開発の DB 設計・開発・結合テストと日本側との折衝・通訳を担当（Ruby on Rails / Django / Laravel / Java）。
               </p>
             </div>
           </li>

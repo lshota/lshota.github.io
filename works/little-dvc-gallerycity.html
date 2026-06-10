@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GalleryCity（リトル・ダヴィンチ） | 李翔太 Portfolio</title>
-  <meta name="description" content="お子様の絵や工作を写真で残し、家族で共有するWebプラットフォーム「リトル・ダヴィンチ GalleryCity」のフルスタック開発実績。">
+  <title>GalleryCity（リトル・ダビンチ） | 李翔太 Portfolio</title>
+  <meta name="description" content="子どもの作品を家族で共有し、AI 評価・コンクール応募ができるギャラリープラットフォーム。Vue 3 + Laravel + OpenAI GPT-4o で構築。">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -60,16 +60,17 @@
       <a href="../index.html#works" class="work-detail__back">作品一覧へ戻る</a>
 
       <div class="work-detail__header">
-        <h1 class="work-detail__title">GalleryCity（リトル・ダヴィンチ）</h1>
+        <h1 class="work-detail__title">GalleryCity（リトル・ダビンチ）</h1>
         <p class="work-detail__lead">
-          お子様の絵や工作を写真で残し、家族間限定で共有する温かい Web プラットフォーム。AI 評価・決済機能を備えたフルスタック開発を担当。
+          子どもの絵画・工作などの作品を家族単位で共有・保管し、コンクール応募、ポイントによるいいね、AI による作品評価コメントを提供する Web アプリケーション。
         </p>
         <ul class="work-detail__tags">
-          <li>React (TypeScript)</li>
-          <li>Laravel 12</li>
-          <li>Docker</li>
-          <li>AI 評価</li>
+          <li>Vue 3</li>
+          <li>TypeScript</li>
+          <li>Laravel 9</li>
+          <li>OpenAI GPT-4o</li>
           <li>Square 決済</li>
+          <li>GCS</li>
         </ul>
       </div>
 
@@ -81,59 +82,54 @@
         <div class="work-detail__main">
           <h2>概要</h2>
           <p>
-            お子様の絵画や工作などの作品を写真として残し、家族間限定で共有できる Web プラットフォーム。
-            作品投稿・共有・コミュニケーション機能に加え、AI による作品評価や決済機能を備えたサービスとして設計。
-            フロントエンド・バックエンドの両方を担当し、API 連携を含めたフルスタック開発を行いました。
+            子どもの絵画・工作などの作品を家族単位で共有・保管し、コンクール応募、ポイントによるいいね、AI による作品評価コメントを提供する Web アプリケーション。
+            Vue 3 SPA と Laravel API の前後分離構成で、バックエンド設計（UseCase / DTO パターン）とフロントエンド実装を担当しました。
           </p>
 
-          <h2>役割・担当範囲</h2>
-          <p>PM 1名 ＋ SE 2名体制で参画。フルスタック開発と API 連携を担当しました。</p>
+          <h2>技術的課題</h2>
           <ul>
-            <li>React（TypeScript）でフロントエンド開発：作品一覧、投稿、いいね・コメント、家族専用チャット UI</li>
-            <li>Laravel 12 によるバックエンド開発：作品投稿・家族間共有・コメント・いいね等の API を実装</li>
-            <li>家族単位でのアクセス制御を実装し、限定共有を実現</li>
-            <li>AI メンターによる作品評価機能の実装（サービスの差別化）</li>
-            <li>Square 決済を導入し、サービス内課金フローを構築</li>
-            <li>Docker を用いた開発環境の統一、GitHub によるソース管理</li>
+            <li>OpenAI API（GPT-4o）との連携における応答遅延時のタイムアウト制御（2 段階リトライ）と、処理中プレースホルダによる重複評価の防止</li>
+            <li>作品画像のアップロード時に 4 サイズ（サムネイル〜オリジナル）を生成・保存し、DB トランザクションとの整合性を確保</li>
+            <li>家族・子ども・作品単位の権限判定（コンクール応募状態に応じた閲覧制御を含む）の一貫した適用</li>
           </ul>
 
-          <h2>工夫した点</h2>
+          <h2>主な担当</h2>
           <ul>
-            <li><strong>プライバシー重視の限定共有設計</strong>：家族単位のアクセス制御で、安心して子どもの成長記録を残せる仕組みを構築</li>
-            <li><strong>インタラクティブ機能の統合</strong>：いいね・コメント・チャットなど複数機能を整合性を保ちながら統合的に実装</li>
-            <li><strong>差別化機能の組み込み</strong>：AI 評価・決済機能を安全に統合し、付加価値の高いプラットフォームを実現</li>
-            <li><strong>フロント・バック一貫対応</strong>：両者の整合性を一人で担保することで、開発スピードと品質を両立</li>
+            <li>Laravel + UseCase / DTO 構成による REST API 設計・実装（作品 CRUD、コンクール応募、家族管理、チャット、通知）</li>
+            <li>Vue 3 + TypeScript + Pinia による SPA 構築（作品投稿・一覧、決済モーダル、AI 評価 UI、コンクール応募フロー）</li>
+            <li>Intervention Image + Google Cloud Storage による作品画像のマルチサイズ変換・アップロード処理</li>
+            <li>Square API 連携によるポイント購入・応募料・商品購入の決済処理</li>
+            <li>Laravel Socialite（LINE / Google / Facebook / Yahoo）による OAuth 認証と家族招待フローの実装</li>
           </ul>
 
-          <h2>結果</h2>
+          <h2>成果</h2>
           <ul>
-            <li>家族間限定の安全な共有機能により、安心して成長記録を残せるサービスを実現</li>
-            <li>インタラクティブ機能で家族内コミュニケーションを活性化</li>
-            <li>AI 評価・決済機能による継続利用可能なプラットフォームを構築</li>
+            <li>本番稼働中。プライバシーに配慮した家族限定共有と AI 評価・決済を組み込んだ継続利用型サービスとしてリリース</li>
+            <li>AI 機能（GPT-4o 作品評価）のプロダクト組み込みを設計から実装まで完遂</li>
           </ul>
         </div>
 
         <aside class="work-detail__side">
           <dl>
             <div>
-              <dt>サイト</dt>
-              <dd>リトル・ダヴィンチ / Little Da Vinci</dd>
+              <dt>サービス</dt>
+              <dd>リトル・ダビンチ / Little Da Vinci</dd>
             </div>
             <div>
               <dt>URL</dt>
               <dd><a href="https://little-dvc.com/gallerycity/" target="_blank" rel="noopener">little-dvc.com/gallerycity/</a></dd>
             </div>
             <div>
-              <dt>制作期間</dt>
-              <dd>2025年4月 〜 2025年9月（約6ヶ月）</dd>
+              <dt>期間</dt>
+              <dd>2025年4月 〜 2025年9月</dd>
             </div>
             <div>
               <dt>役割</dt>
-              <dd>PM 1名 ＋ SE 2名体制（フルスタック開発）</dd>
+              <dd>フルスタックエンジニア（PM1名・SE2名体制）</dd>
             </div>
             <div>
-              <dt>使用技術</dt>
-              <dd>React / TypeScript / Laravel 12 / Docker / GitHub</dd>
+              <dt>環境</dt>
+              <dd>Vue 3 / TypeScript 5 / Pinia / Vite / Tailwind CSS / Laravel 9（PHP 8.0）/ MySQL 8 / Google Cloud Storage / OpenAI API（GPT-4o）/ Square / Docker</dd>
             </div>
           </dl>
         </aside>

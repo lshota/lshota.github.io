@@ -805,6 +805,9 @@ button {
 .works.is-expanded .work-card:nth-child(6) { animation-delay: 0.2s; }
 .works.is-expanded .work-card:nth-child(7) { animation-delay: 0.3s; }
 .works.is-expanded .work-card:nth-child(8) { animation-delay: 0.4s; }
+.works.is-expanded .work-card:nth-child(9) { animation-delay: 0.5s; }
+.works.is-expanded .work-card:nth-child(10) { animation-delay: 0.6s; }
+.works.is-expanded .work-card:nth-child(11) { animation-delay: 0.7s; }
 
 @keyframes workReveal {
   from {
